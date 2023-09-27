@@ -8,4 +8,4 @@ Download the executable and the "presets" folder. You can load the presets by cl
 
 Please do not to open random other files, also use your own presets only if you know what you are doing!
 
-For a much more sophisticated solution for calculating the next generation, see https://golly.sourceforge.io/
+A much more sophisticated solution for calculating the next generation can be found here: https://golly.sourceforge.io/
