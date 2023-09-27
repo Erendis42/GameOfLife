@@ -14,6 +14,4 @@ This is an old university project, with the simplest algorithm to calculate next
 
 [//]: #
 
-\
-\
 A better implementation (with a much more efficient next gen algorithm and an infinite canvas) can be found [here](https://golly.sourceforge.io/).
