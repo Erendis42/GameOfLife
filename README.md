@@ -3,4 +3,9 @@ C# WPF implementation
 
 This is an old university project, with the simplest (and probably the least effective) algorithm to calculate next generations imaginable.
 
-For a much more sophisticated solution, see https://golly.sourceforge.io/
+### Usage:
+Download the executable and the "presets" folder. You can load the presets by clicking File -> Open.
+
+Please do not to open random other files, also use your own presets only if you know what you are doing!
+
+For a much more sophisticated solution for calculating the next generation, see https://golly.sourceforge.io/
