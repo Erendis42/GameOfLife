@@ -13,6 +13,6 @@ This is an old university project, with the simplest algorithm to calculate next
 (Please do not try to open random files. Also, use your own presets only if you know what you are doing!)
 
 [//]: #
-\
 
+\
 A better implementation (with a much more efficient next gen algorithm and an infinite canvas) can be found [here](https://golly.sourceforge.io/).
