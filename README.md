@@ -1,4 +1,4 @@
-# Game_of_Life
+# Conway's Game Of Life
 C# WPF implementation
 
 This is an old university project.
