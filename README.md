@@ -5,7 +5,7 @@ This is an old university project, with the simplest algorithm to calculate next
 
 ### Usage:
 
-Download a Windows 64bit executable at https://drive.google.com/drive/folders/1-1Z9VDfl6vANZf0U1_xerEeeRLfsgSLU?usp=sharing
+Download a Windows 64-bit executable at https://drive.google.com/drive/folders/1-1Z9VDfl6vANZf0U1_xerEeeRLfsgSLU?usp=sharing
 Double click the .exe file.
 When the warning message pops up, click "Run Anyway".
 (You can load the presets by clicking File -> Open.)
