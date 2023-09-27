@@ -5,7 +5,7 @@ This is an old university project, with the simplest algorithm to calculate next
 
 ### Usage:
 
-- Use this program at your own risk - CPU usage can get high real quick.
+- WARNING: Use this program at your own risk - CPU usage can get high real quick.
 - Download the precompiled version for Windows 64-bit [here](https://drive.google.com/file/d/10ajqbP6kPEjyj6d2h8xzJoHAyHj5BhVw/view?usp=sharing)
 - Double click the .exe file.
 - When the warning message pops up, click "Run Anyway".
