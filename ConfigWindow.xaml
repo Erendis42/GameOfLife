@@ -1,0 +1,63 @@
+﻿<Window x:Class="GameOfLife.ConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameOfLife"
+        mc:Ignorable="d"
+        Title="ConfigWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:MyColorConverter x:Key="myColorConverter"/>
+    </Window.Resources>
+	<Grid>
+        <Label x:Name="lblWidth" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="149" Foreground="LightGray" MinHeight="26" Background="#00000000"/>
+        <Label x:Name="lblHeight" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="149" Foreground="LightGray" MinHeight="26" Background="#00000000"/>
+        <Label x:Name="lblSize" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="149" Foreground="LightGray" MinHeight="26" Background="#00000000"/>
+        <Label x:Name="lblThickness" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="149" Foreground="LightGray" MinHeight="26" Background="#00000000"/>
+        <Label x:Name="lblLifespan" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="149" Foreground="LightGray" MinHeight="26" Background="#00000000"/>
+        <Label x:Name="lblSleep" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="149" Foreground="LightGray" MinHeight="26" Background="#00000000"/>
+        <Label x:Name="lblAlive" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Width="149" Foreground="LightGray" MinHeight="26" Background="#00000000"/>
+        <Label x:Name="lblDead" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Width="149" Foreground="LightGray" MinHeight="26" Background="#00000000"/>
+        <Label x:Name="lblBorder" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top" Width="149" Foreground="LightGray" MinHeight="26" Background="#00000000"/>
+        <TextBox x:Name="tbWidth" Height="23" Margin="178,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" PreviewTextInput="tb_PreviewTextInput" MaxLength="4" Background="LightGray" HorizontalAlignment="Left" Width="60" MinHeight="26" DataObject.Pasting="TextBoxPasting"/>
+        <TextBox x:Name="tbHeight" Height="23" Margin="178,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" PreviewTextInput="tb_PreviewTextInput" MaxLength="4" Background="LightGray" HorizontalAlignment="Left" Width="60" MinHeight="26" DataObject.Pasting="TextBoxPasting"/>
+        <TextBox x:Name="tbSize" Height="23" Margin="178,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" PreviewTextInput="tb_PreviewTextInput" MaxLength="4" Background="LightGray" HorizontalAlignment="Left" Width="60" MinHeight="26" DataObject.Pasting="TextBoxPasting"/>
+        <TextBox x:Name="tbThickness" Height="22" Margin="178,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" PreviewTextInput="tb_PreviewTextInput" MaxLength="4" Background="LightGray" HorizontalAlignment="Left" Width="60" MinHeight="26" DataObject.Pasting="TextBoxPasting"/>
+        <TextBox x:Name="tbLifespan" Height="24" Margin="178,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" PreviewTextInput="tb_PreviewTextInput" MaxLength="4" Background="LightGray" HorizontalAlignment="Left" Width="60" MinHeight="26" DataObject.Pasting="TextBoxPasting"/>
+        <TextBox x:Name="tbSleep" Height="22" Margin="178,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" PreviewTextInput="tb_PreviewTextInput" MaxLength="4" Background="LightGray" HorizontalAlignment="Left" Width="60" MinHeight="26" DataObject.Pasting="TextBoxPasting"/>
+        <TextBox x:Name="tbAlive" Height="24" Margin="178,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" PreviewTextInput="tbHex_PreviewTextInput" MaxLength="6" Background="LightGray" HorizontalAlignment="Left" Width="60" MinHeight="26" DataObject.Pasting="TextBoxPasting"/>
+        <TextBox x:Name="tbDead" Height="22" Margin="178,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" MaxLength="6" PreviewTextInput="tbHex_PreviewTextInput" Background="LightGray" HorizontalAlignment="Left" Width="60" MinHeight="26" DataObject.Pasting="TextBoxPasting"/>
+        <TextBox x:Name="tbBorder" Height="24" Margin="178,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" MaxLength="6" PreviewTextInput="tbHex_PreviewTextInput" Background="LightGray" HorizontalAlignment="Left" Width="60" MinHeight="26" DataObject.Pasting="TextBoxPasting"/>
+        <Label Content="#" HorizontalAlignment="Left" Margin="164,196,0,0" VerticalAlignment="Top" Padding="1,5" Foreground="LightGray" MinHeight="26"/>
+        <Label Content="#" HorizontalAlignment="Left" Margin="164,227,0,0" VerticalAlignment="Top" Padding="1,5" Foreground="LightGray" MinHeight="26"/>
+        <Label Content="#" HorizontalAlignment="Left" Margin="164,258,0,0" VerticalAlignment="Top" Padding="1,5" Foreground="LightGray" MinHeight="26"/>
+        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="74" VerticalContentAlignment="Center" Click="btnOK_Click"/>
+        <Button x:Name="btnRndAlive" Content="Random" HorizontalAlignment="Left" Margin="273,196,0,0" VerticalAlignment="Top" Width="76" Height="20" Click="btnRnd_Click" MinHeight="26"/>
+        <Button x:Name="btnRndDead" Content="Random" HorizontalAlignment="Left" Margin="273,227,0,0" VerticalAlignment="Top" Width="76" Height="20" Click="btnRnd_Click" MinHeight="26"/>
+        <Button x:Name="btnRndBorder" Content="Random" HorizontalAlignment="Left" Margin="273,258,0,0" VerticalAlignment="Top" Width="76" Height="20" Click="btnRnd_Click" MinHeight="26"/>
+        <Rectangle x:Name="rectangleAlive" Fill="{Binding Text, Converter={StaticResource myColorConverter}, ElementName=tbAlive}" HorizontalAlignment="Left" Height="24" Margin="243,196,0,0" VerticalAlignment="Top" Width="25" MinHeight="26">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Gray" Offset="1"/>
+                    <GradientStop Color="DimGray"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle x:Name="rectangleDead" Fill="{Binding Text, Converter={StaticResource myColorConverter}, ElementName=tbDead}" HorizontalAlignment="Left" Height="26" Margin="243,227,0,0" VerticalAlignment="Top" Width="25" MinHeight="26">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="DarkGray" Offset="1"/>
+                    <GradientStop Color="#FF3C3C3C"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle x:Name="rectangleBorder" Fill="{Binding Text, Converter={StaticResource myColorConverter}, ElementName=tbBorder}" HorizontalAlignment="Left" Height="24" Margin="243,258,0,0" VerticalAlignment="Top" Width="25" MinHeight="26">
+            <Rectangle.Stroke>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="DarkGray" Offset="1"/>
+                    <GradientStop Color="#FF3C3C3C"/>
+                </LinearGradientBrush>
+            </Rectangle.Stroke>
+        </Rectangle>
+    </Grid>
+</Window>
