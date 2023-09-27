@@ -10,4 +10,4 @@ Download the executable and the "presets" folder. You can load the presets by cl
 The .zip file contains the solution as I revived it in Visual Studio 2022 right now. (27 September, 2023)  
 \
 \
-A much more sophisticated solution for calculating the next generation and with an infinite canvas can be found here: https://golly.sourceforge.io/
+A much more sophisticated solution can be found here: https://golly.sourceforge.io/
