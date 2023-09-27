@@ -15,4 +15,4 @@ This is an old university project, with the simplest algorithm to calculate next
 
 \
 \
-A much more sophisticated implementation (with memoization, infinite canvas, etc.) can be found [here](https://golly.sourceforge.io/)
+A better implementation (with a much more efficient next gen algorithm, an infinite canvas, and much more!) can be found [here](https://golly.sourceforge.io/)
